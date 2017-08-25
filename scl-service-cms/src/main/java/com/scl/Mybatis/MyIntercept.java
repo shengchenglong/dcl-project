@@ -9,8 +9,6 @@ import org.apache.ibatis.session.RowBounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Resource;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
@@ -24,7 +22,8 @@ public class MyIntercept implements Interceptor {
 
     private Logger logger = LoggerFactory.getLogger(MyIntercept.class);
 
-    @Override
+    @SuppressWarnings({ "unused", "rawtypes" })
+	@Override
     public Object intercept(Invocation invocation) throws Throwable {
         // 拿取参数
         Object[] args = invocation.getArgs();
@@ -44,7 +43,8 @@ public class MyIntercept implements Interceptor {
 
     }
 
-    @Override
+    @SuppressWarnings("rawtypes")
+	@Override
     public void setProperties(Properties properties) {
         Set set = properties.keySet();
         Iterator i = set.iterator();

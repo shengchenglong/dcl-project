@@ -3,11 +3,8 @@ package com.scl.cms.service;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.scl.cms.domain.Advertising;
 import com.scl.cms.domain.Template;
 import com.scl.cms.mapper.TemplateMapper;
-import org.apache.ibatis.session.RowBounds;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,7 +22,8 @@ public class TemplateServiceImpl implements TemplateService {
 
     @Resource
     private TemplateMapper templateMapper;
-    @Autowired
+    @SuppressWarnings("unused")
+	@Autowired
     private SqlSessionTemplate sqlSessionTemplate;
 
     @Override

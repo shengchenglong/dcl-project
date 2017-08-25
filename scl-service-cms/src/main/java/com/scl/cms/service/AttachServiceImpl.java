@@ -6,7 +6,6 @@ import com.scl.cms.mapper.AttachMapper;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import javax.xml.bind.attachment.AttachmentMarshaller;
 import java.util.List;
 
 /**

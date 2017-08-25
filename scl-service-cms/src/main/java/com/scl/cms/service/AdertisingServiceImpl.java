@@ -6,7 +6,6 @@ import com.scl.cms.domain.AdvertisingExample;
 import com.scl.cms.mapper.AdvertisingMapper;
 import com.scl.eum.EnumDelete;
 import com.scl.eum.EnumPublish;
-import org.apache.ibatis.session.RowBounds;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;

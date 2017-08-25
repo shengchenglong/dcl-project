@@ -1,20 +1,14 @@
 package com.scl.cms.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.remoting.transport.grizzly.GrizzlyClient;
-import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.scl.ApplicationBootStrap;
 import com.scl.cms.domain.*;
 import com.scl.cms.mapper.AdvertisingMapper;
 import com.scl.cms.mapper.DictionaryMapper;
-import org.apache.ibatis.executor.parameter.ParameterHandler;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.json.ObjectContent;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
@@ -44,7 +38,8 @@ public class TestClass {
     @Reference(group = "cms")
     private TemplateService templateService;
 
-    @Test
+    @SuppressWarnings("rawtypes")
+	@Test
     public void test1() {
         System.out.println(siteService.getAllParentSiteWithChildrenSite());
         for(Site site : siteService.getAllParentSiteWithChildrenSite()) {

@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.cms.domain.ColumnItem;
 import com.scl.cms.mapper.ColumnItemMapper;

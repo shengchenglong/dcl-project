@@ -1,10 +1,7 @@
 package com.scl.cms.mapper;
 
-import com.scl.cms.domain.Advertising;
-import com.scl.cms.domain.Site;
 import com.scl.cms.domain.Template;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.session.RowBounds;
 
 import java.util.List;
 import java.util.Map;

@@ -2,7 +2,6 @@ package com.scl.cms.redisOption;
 
 import com.scl.cms.redisOption.service.RedisService;
 import com.scl.cms.redisOption.service.impl.RedisServiceImpl;
-import com.scl.cms.service.DictionaryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
@@ -17,7 +16,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class RedisCacheInit implements InitializingBean, ApplicationContextAware {
 
-    private Logger logger = LoggerFactory.getLogger(RedisCacheInit.class);
+    @SuppressWarnings("unused")
+	private Logger logger = LoggerFactory.getLogger(RedisCacheInit.class);
     private ApplicationContext applicationContext;
 
     @Override

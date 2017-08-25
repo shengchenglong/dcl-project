@@ -5,7 +5,6 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.scl.cms.domain.Dictionary;
 import com.scl.cms.mapper.DictionaryMapper;
-import com.scl.cms.mapper.SiteMapper;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
@@ -110,7 +109,7 @@ public class DictionaryServiceImpl implements DictionaryService {
     public PageInfo<Dictionary> listPage(PageInfo<Dictionary> pageInfo, Map<String, Object> map) {
         PageHelper.startPage(pageInfo.getPageNum(), pageInfo.getPageSize());
         List<Dictionary> list = dictionaryMapper.listPage(map);
-        PageInfo resPage = new PageInfo(list);
+        PageInfo<Dictionary> resPage = new PageInfo<Dictionary>(list);
         return resPage;
     }
 }

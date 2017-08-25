@@ -10,7 +10,8 @@ import java.io.*;
  */
 public class SerializeUtil {
 
-    private Logger logger = LoggerFactory.getLogger(SerializeUtil.class);
+    @SuppressWarnings("unused")
+	private Logger logger = LoggerFactory.getLogger(SerializeUtil.class);
 
     /**
      * 将对象序列化成字节数组
@@ -26,7 +27,6 @@ public class SerializeUtil {
             oos.writeObject(object);
             byte[] bytes = baos.toByteArray();
             return bytes;
-
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);
