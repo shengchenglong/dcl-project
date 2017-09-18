@@ -6,7 +6,10 @@
 		<artifactId>scl</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
+	<groupId>com.scl.user</groupId>
 	<artifactId>scl-api-user</artifactId>
+	<packaging>jar</packaging>
 
 
 	<!--<dependencies>-->
