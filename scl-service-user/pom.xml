@@ -19,21 +19,37 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- 持久层 操作数据库所需jar包 -->
+		<!--service通用 jdbc mybatis transaction -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>1.0.27</version>
 		</dependency>
+
 		<!-- spring 事务 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 		</dependency>
+		<!--service通用 -->
 
 		<!-- springboot starter -->
 		<dependency>
@@ -55,17 +71,9 @@
 			<version>1.2.0</version>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib</artifactId>
-			<version>3.1</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>asm</artifactId>
-					<groupId>org.ow2.asm</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency> -->
+		<!-- <dependency> <groupId>cglib</groupId> <artifactId>cglib</artifactId> 
+			<version>3.1</version> <exclusions> <exclusion> <artifactId>asm</artifactId> 
+			<groupId>org.ow2.asm</groupId> </exclusion> </exclusions> </dependency> -->
 
 		<!-- 本地api依赖 -->
 		<!-- <dependency> <groupId>com.scl</groupId> <artifactId>scl-common</artifactId> 

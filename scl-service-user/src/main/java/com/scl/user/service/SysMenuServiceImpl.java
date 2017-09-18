@@ -1,7 +1,6 @@
 package com.scl.user.service;
 
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.user.domain.SysMenu;
 import com.scl.user.mapper.SysMenuMapper;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +11,6 @@ import java.util.List;
 /**
  * Created by shengchenglong on 17/2/20.
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SysMenuServiceImpl implements SysMenuService {
 

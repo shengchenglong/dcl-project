@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.cms.domain.Advertising;
 import com.scl.cms.domain.AdvertisingExample;
 import com.scl.cms.mapper.AdvertisingMapper;
@@ -15,7 +14,6 @@ import java.util.List;
 /**
  * Created by shengchenglong on 17/4/6.
  */
-@Service(protocol = "dubbo")
 @Transactional
 public class AdertisingServiceImpl implements AdvertisingService {
 

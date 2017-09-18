@@ -2,7 +2,6 @@ package com.scl.user.service;
 
 import javax.annotation.Resource;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.scl.user.domain.SysUser;
@@ -14,7 +13,6 @@ import com.scl.user.mapper.SysUserMapper;
  * @author shengchenglong
  *
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SysUserServiceImpl implements SysUserService {
 

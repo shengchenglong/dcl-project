@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.cms.domain.ColumnItem;
 import com.scl.cms.mapper.ColumnItemMapper;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,7 +10,6 @@ import java.util.List;
 /**
  * Created by shengchenglong on 17/4/5.
  */
-@Service(protocol = "dubbo")
 @Transactional
 public class ColumnItemsServiceImpl implements ColumnItemService {
 

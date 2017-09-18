@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.cms.domain.Site;
 import com.scl.cms.mapper.SiteMapper;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +11,6 @@ import java.util.List;
 /**
  * Created by shengchenglong on 17/3/3.
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SiteServiceImpl implements SiteService {
 

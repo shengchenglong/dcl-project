@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.cms.domain.Attach;
 import com.scl.cms.mapper.AttachMapper;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,7 +10,6 @@ import java.util.List;
 /**
  * Created by shengchenglong on 17/4/6.
  */
-@Service(protocol = "dubbo")
 @Transactional
 public class AttachServiceImpl implements AttachService {
 

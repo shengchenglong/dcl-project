@@ -1,7 +1,6 @@
 package com.scl.user.service;
 
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.user.domain.SysResource;
 import com.scl.user.domain.SysRole;
 import com.scl.user.mapper.SysResourceMapper;
@@ -15,7 +14,6 @@ import java.util.List;
  * @author shengchenglong
  *
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SysResourceServiceImpl implements SysResourceService {
 	

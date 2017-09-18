@@ -1,6 +1,6 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
+//import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.scl.ApplicationBootStrap;
 import com.scl.cms.domain.*;
@@ -17,15 +17,18 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 过时，从dubbo框架转到spring-cloud框架
+ * 
  * Created by shengchenglong on 17/3/7.
  */
+@Deprecated
 @RunWith(SpringJUnit4ClassRunner.class)
 //@SpringApplicationConfiguration(classes = {ApplicationBootStrap.class})
 @SpringBootTest(classes = {ApplicationBootStrap.class})
 public class TestClass {
 
 
-    @Reference(group = "cms")
+//    @Reference(group = "cms")
     private SiteService siteService;
 
     @Resource
@@ -35,7 +38,7 @@ public class TestClass {
     @Resource
     private AdvertisingMapper advertisingMapper;
 
-    @Reference(group = "cms")
+//    @Reference(group = "cms")
     private TemplateService templateService;
 
     @SuppressWarnings("rawtypes")

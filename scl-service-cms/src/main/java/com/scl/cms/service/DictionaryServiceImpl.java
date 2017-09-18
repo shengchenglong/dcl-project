@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.scl.cms.domain.Dictionary;
@@ -14,7 +13,6 @@ import java.util.Map;
 /**
  * Created by shengchenglong on 17/3/7.
  */
-@Service(protocol = {"dubbo"})
 @Transactional
 public class DictionaryServiceImpl implements DictionaryService {
 

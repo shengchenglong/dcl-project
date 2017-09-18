@@ -1,7 +1,6 @@
 package com.scl.user.service;
 
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.scl.user.domain.SysRole;
 import com.scl.user.mapper.SysRoleMapper;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +13,6 @@ import java.util.List;
  * @author shengchenglong
  *
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SysRoleServiceImpl implements SysRoleService {
 

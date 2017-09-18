@@ -1,6 +1,5 @@
 package com.scl.cms.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.scl.cms.domain.Template;
@@ -16,7 +15,6 @@ import java.util.Map;
 /**
  * Created by shengchenglong on 17/4/6.
  */
-@Service(protocol = "dubbo")
 @Transactional
 public class TemplateServiceImpl implements TemplateService {
 

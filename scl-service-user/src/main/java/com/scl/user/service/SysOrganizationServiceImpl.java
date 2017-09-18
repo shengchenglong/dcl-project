@@ -3,7 +3,6 @@ package com.scl.user.service;
 import javax.annotation.Resource;
 
 
-import com.alibaba.dubbo.config.annotation.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.scl.user.domain.SysOrganization;
@@ -15,7 +14,6 @@ import com.scl.user.mapper.SysOrganizationMapper;
  * @author shengchenglong
  *
  */
-@Service(protocol = { "dubbo" })
 @Transactional
 public class SysOrganizationServiceImpl implements SysOrganizationService  {
 	
