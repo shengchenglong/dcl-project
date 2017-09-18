@@ -1,4 +1,11 @@
-.classpath
+*.iml
+/target
+*.swp
+/mvn
+*.cmd
 .project
+.classpath
 .settings/
-target/
+.gitignore
+mvnw
+.mvn
